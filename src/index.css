@@ -587,39 +587,24 @@ button { font-family: var(--font); }
   position: fixed; inset: 0; z-index: 9999;
   background: var(--bg);
   display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 32px;
   transition: opacity .35s ease, visibility .35s ease;
 }
-.sl-loader--exit {
-  opacity: 0; visibility: hidden;
-}
-.sl-loader-inner {
-  display: flex; flex-direction: column; align-items: center; gap: 28px;
-}
-.sl-svg {
-  width: min(480px, 88vw);
-}
+.sl-loader--exit { opacity: 0; visibility: hidden; }
+.sl-svg { width: 100vw; height: 60px; display: block; overflow: visible; }
 .sl-label {
   display: flex; align-items: baseline; gap: 8px;
-  animation: sl-fadein .5s .2s ease both;
+  animation: sl-fadein .4s .1s ease both;
 }
 .sl-label-main {
-  font-size: 1.7rem; font-weight: 800; color: var(--text); letter-spacing: -.03em;
+  font-size: 1.6rem; font-weight: 800; color: var(--text); letter-spacing: -.03em;
 }
 .sl-label-main em { font-style: italic; color: var(--accent); }
-.sl-label-sub {
-  font-size: 1rem; font-weight: 400; color: var(--text-muted); letter-spacing: 0;
-}
+.sl-label-sub { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
 
-@keyframes sl-draw {
-  to { stroke-dashoffset: 0; }
-}
-@keyframes sl-pop {
-  0%   { opacity: 0; transform: scale(0); }
-  60%  { opacity: 1; transform: scale(1.4); }
-  100% { opacity: 1; transform: scale(1); }
-}
+@keyframes sl-draw { to { stroke-dashoffset: 0; } }
 @keyframes sl-fadein {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(5px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 

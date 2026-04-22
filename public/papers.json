@@ -19,7 +19,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "User study"
     ],
     "temporalModel": [
@@ -100,7 +100,7 @@
       "Heuristic - Sugiyama-like ordering"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "Quantitative metrics (crossings etc)"
     ],
     "temporalModel": [
@@ -180,7 +180,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "User study"
     ],
     "temporalModel": [
@@ -224,7 +224,7 @@
     ],
     "evaluation": [
       "Benchmarks",
-      "Look at picture (paper says case study)",
+      "Case Study",
       "Quantitative metrics (crossings etc)"
     ],
     "temporalModel": [
@@ -471,7 +471,7 @@
     ],
     "evaluation": [
       "Benchmarks",
-      "Look at picture (paper says case study)",
+      "Case Study",
       "Quantitative metrics (crossings etc)",
       "User study"
     ],
@@ -643,7 +643,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)"
+      "Case Study"
     ],
     "temporalModel": [
       "Discrete",
@@ -857,7 +857,7 @@
       "Heuristic - other"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)"
+      "Case Study"
     ],
     "temporalModel": [
       "Discrete",
@@ -964,7 +964,7 @@
       "Heuristic - Sugiyama-like ordering"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "Quantitative - only runtime"
     ],
     "temporalModel": [
@@ -1108,7 +1108,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "User study"
     ],
     "temporalModel": [
@@ -1336,7 +1336,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "User study"
     ],
     "temporalModel": [
@@ -1633,7 +1633,7 @@
       "Exact - Linear Programming"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)"
+      "Case Study"
     ],
     "temporalModel": [
       "Discrete",
@@ -1797,7 +1797,7 @@
     ],
     "evaluation": [
       "Expert interview",
-      "Look at picture (paper says case study)",
+      "Case Study",
       "Quantitative metrics (crossings etc)"
     ],
     "temporalModel": [
@@ -1845,7 +1845,7 @@
       "Pipeline"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)"
+      "Case Study"
     ],
     "temporalModel": [
       "Discrete",
@@ -1887,7 +1887,7 @@
       "Other"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)",
+      "Case Study",
       "User study"
     ],
     "temporalModel": [
@@ -1928,7 +1928,7 @@
       "Heuristic - greedy coordination"
     ],
     "evaluation": [
-      "Look at picture (paper says case study)"
+      "Case Study"
     ],
     "temporalModel": [
       "Discrete",

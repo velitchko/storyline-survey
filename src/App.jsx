@@ -143,12 +143,7 @@ function PaperDrawer({ paper, onClose }) {
 
           {paper.layoutDescription && (
             <div className="drawer-section">
-              <div className="drawer-section-title">
-                Layout Algorithm Description
-                {paper.layoutFullyDescribed === 'Yes' && (
-                  <span className="tag-described" style={{marginLeft:8}}>Fully described</span>
-                )}
-              </div>
+              <div className="drawer-section-title">Comments</div>
               <div className="drawer-description">{paper.layoutDescription}</div>
             </div>
           )}
@@ -195,7 +190,6 @@ function PaperCard({ paper, listView, onClick }) {
       <div style={{flex:1, display:'flex', flexDirection:'column', gap:8, minWidth:0}}>
         <div className="paper-card-meta">
           <span className="paper-card-year">{paper.year}</span>
-          <span className="paper-source-badge">{paper.source}</span>
         </div>
         <div className="paper-card-title">{paper.title}</div>
         <div className="paper-card-authors" style={{WebkitLineClamp:2, display:'-webkit-box', WebkitBoxOrient:'vertical', overflow:'hidden'}}>
@@ -231,7 +225,6 @@ function FilterSection({ def, options, active, onChange }) {
 
   return (
     <div className="filter-group">
-      <span className="filter-label">{def.label}</span>
       <div className="filter-options">
         {visible.map(opt => (
           <button
@@ -256,7 +249,6 @@ function FilterSection({ def, options, active, onChange }) {
 function YearFilter({ years, active, onChange }) {
   return (
     <div className="filter-group">
-      <span className="filter-label">Year</span>
       <div className="filter-options">
         {years.map(y => (
           <button
