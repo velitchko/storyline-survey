@@ -1,0 +1,1953 @@
+[
+  {
+    "doi": "10.1109/TVCG.2024.3456373",
+    "title": "SpreadLine: Visualizing Egocentric Dynamic Influence",
+    "authors": "Y. -H. Kuo, and D. Liu, and K. -L. Ma",
+    "year": "2025",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10680192",
+    "source": "IEEE",
+    "domain": [
+      "Authorship network",
+      "Disease outbreak",
+      "Social - other"
+    ],
+    "methodType": [
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - greedy white space reduction",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Multivariate data encoding"
+    ],
+    "specialFeatures": [
+      "Protagonist"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Interaction grouping",
+      "Protagonist",
+      "Straight protagonist"
+    ],
+    "layoutDescription": "Egocentric storyline of a ego network, ego is straight line. Distinction between 1-alters and 2-alters. Stronger ties are closer to the ego.  Those receiving to ego are below, those sending above. So the ordering is nearly determined by the Data. The layout generation adapts storyflow: The 2-alters that still can change their order are sorted by barycenter. Wiggle count is still minimized with lcs, but ego needs to stay straight.\nThe compaction step is different from storyflow: A greedy algorithm is used to compact and make lines more straight, the description is not reproducible.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "https://doi.org/10.1016/j.cag.2025.104169",
+    "title": "Visualizing NBA information via storylines",
+    "authors": "Jie Lin, Chuan-Kai Yang, Chiun-How Kao",
+    "year": "2025",
+    "venue": "Computers & Graphics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0097849325000081",
+    "source": "Science Direct",
+    "domain": [
+      "Movement data - sport"
+    ],
+    "methodType": [
+      "Heuristic - other"
+    ],
+    "evaluation": [
+      "Expert interview"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Character groups",
+      "Labels - characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Separation"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "The algorithm is not super clear to me. First, events are spaced out so that crowded regions are avoided. Then, the ordering is computed with TSP sorting or Ellipse sorting.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "https://doi.org/10.1016/j.cag.2025.104166",
+    "title": "Stratiline: A visualization system based on stratified storyline",
+    "authors": "Mingdong Zhang, Li Chen, Junhai Yong",
+    "year": "2025",
+    "venue": "Computers & Graphics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0097849325000056",
+    "source": "Science Direct",
+    "domain": [
+      "Movement data",
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Heuristic - Global ordering",
+      "Heuristic - MDS",
+      "Heuristic - Sugiyama-like ordering"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Locations",
+      "Significance scores"
+    ],
+    "specialFeatures": [
+      "Locations",
+      "Significance scores"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Stability"
+    ],
+    "constraints": [
+      "Interaction grouping",
+      "Single cluster/location ordering"
+    ],
+    "layoutDescription": "Focus on locations. First, actors, interactions, and locations, get a significance score (weight). The single location order is computed with MDS based on number of characters going between locations. Actors have a global order, and this order is used to sort actors in events. Then a barycenter-like post-processing is used. Y-coordinates do not need to be computed, as locations are rows and actors are equally spaced.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1007/s12650-025-01058-5",
+    "title": "3DStoryline: immersive visual storytelling",
+    "authors": "Haonan YaoLixiang ZhaoBoyuan ChenKaiwen LiHai-Ning LiangLingyun Yu",
+    "year": "2025",
+    "venue": "Journal of Visualization",
+    "url": "https://link.springer.com/article/10.1007/s12650-025-01058-5",
+    "source": "SpringerLink",
+    "domain": [
+      "Movement data"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "3D",
+      "Multivariate data encoding"
+    ],
+    "specialFeatures": [
+      "3D"
+    ],
+    "optimizationObjectives": [
+      "Overlap reduction"
+    ],
+    "constraints": [],
+    "layoutDescription": "3D layout. The new dimension is used to encode space. So no real layout computation besides re-scaling the time axis to avoid overlaps.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "StoryExplorer: A Visualization Framework for Storyline Generation of Textual Narratives",
+    "authors": "Li Ye; Lei Wang; Shaolun Ruan; Heyu Wang; Yuwei Meng; Yigang Wang",
+    "year": "2025",
+    "venue": "IEEE Transactions on Human-Machine Systems",
+    "url": "https://doi.org/10.1109/THMS.2025.3592357",
+    "source": "Snowballing",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "User-guided drawing tool"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "This is a User-AI collaboration tool to generate storylines from text. The StoryFlow layout algorithm is used.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "F2Stories: A Modular Framework for Multi-Objective\nOptimization of Storylines with a Focus on Fairness",
+    "authors": "Tommaso Piselli, Giuseppe Liotta, Fabrizio Montecchiani, Martin Nöllenburg, Sara Di Bartolomeo",
+    "year": "2025",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://www.ac.tuwien.ac.at/files/tr/ac-tr-25-001.pdf",
+    "source": "IEEE",
+    "domain": [],
+    "methodType": [
+      "Exact - ILP",
+      "Heuristic - local search"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Look at picture (paper says case study)",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Character groups",
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "Fairness"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Fairness",
+      "Skewness",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Equidistant characters",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "MILP for computing the complete layout. Characters are placed at discrete coordinates with equal spacing. Standard ILP for crossing minimization. Wiggle and Skewness (number of characters to remove to be planar) are also optimized. All these criteria have adjustable parameters with which they can be weighted in the objective. Further, also fairness of wiggle, skewness, and crossings can be optimized, weighted with further parameters. A post-processing wiggle minimization is also proposed when the ILP does not optimize wiggle. In that case, characters do not have equal spacing. Iteratively and greedily groups of characters are moved up or down as long as wiggle is reduced",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Optimizing Wiggle in Storylines",
+    "authors": "Alexander Dobler, Tim Hegemann, Martin Nöllenburg, Alexander Wolff",
+    "year": "2025",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://arxiv.org/pdf/2508.19802",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Movies/Books",
+      "Rolling stock schedules",
+      "Social - other"
+    ],
+    "methodType": [
+      "Exact - ILP",
+      "Exact - Linear Programming",
+      "Exact - dynamic programming",
+      "Theory"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)",
+      "Theory paper"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Compactness - limit width",
+      "Wiggles/Bends - wiggle count",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Fixed character ordering in interaction",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "Theory+application paper for wiggle minimization. Polynomial (Q)LP for wiggle height and quadratic wiggle height. Wiggle count minimization is shown to be NP-hard, DP for two time steps. Also, drawing style with circular arcs: width between two time steps is minimized.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1145/3633519",
+    "title": "E2Storyline: Visualizing the Relationship with Triplet Entities and Event Discovery",
+    "authors": "Wang, Yunchao, Sun, Guodao, Zhu, Zihao, Li, Tong, Chen, Ling, Liang, Ronghua",
+    "year": "2024",
+    "venue": "ACM Trans. Intell. Syst. Technol.",
+    "url": "https://doi.org/10.1145/3633519",
+    "source": "ACM",
+    "domain": [
+      "Movement data - sport",
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - ILP"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Pair relationship matrix"
+    ],
+    "specialFeatures": [
+      "Entity pair relationship visualization"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Proximity - Entity pair squared distance"
+    ],
+    "constraints": [
+      "Discrete coordinates",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Multi-objective optimization ILP, where characters have discrete coordinates. Crossing minimization is main objective. Further, the objective can also contain sum of squared distance between pairs that are in an entity-entity relationship at that time. That is, events consist of multiple entitiy-entity relationships which are explicitly visualized in a matrix. In their evaluation, they only minimize crossings though.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2023.3261320",
+    "title": "How Does Automation Shape the Process of Narrative Visualization: A Survey of Tools",
+    "authors": "Q. Chen, and S. Cao, and J. Wang, and N. Cao",
+    "year": "2024",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10081398",
+    "source": "IEEE",
+    "domain": [],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Survey"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "Survey of Automatic Narrative Visualization. Storylines are also mentioned.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "https://doi.org/10.1016/j.is.2023.102283",
+    "title": "A survey of approaches for event sequence analysis and visualization",
+    "authors": "Anton Yeshchenko, Jan Mendling",
+    "year": "2024",
+    "venue": "Information Systems",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0306437923001199",
+    "source": "Science Direct",
+    "domain": [],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Survey"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "Survey of event sequence visualizations. Storylines are briefly mentioned.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Revisiting ILP Models for Exact Crossing Minimization in Storyline Drawings",
+    "authors": "Alexander Dobler, Michael Jünger, Paul J. Jünger, Julian Meffert, Petra mutzel, Martin Nöllenburg",
+    "year": "2024",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://doi.org/10.4230/LIPIcs.GD.2024.31",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Authorship network",
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - ILP"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Improved ILP variants for crossing minimization. Some insights about optimal solutions that lead to now ILP models.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Storylines with a Protagonist",
+    "authors": "Tim Hegemann and Alexander Wolff",
+    "year": "2024",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://doi.org/10.4230/LIPIcs.GD.2024.26",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Authorship network"
+    ],
+    "methodType": [
+      "Exact - Poly",
+      "Heuristic - greedy ordering",
+      "Heuristic - other"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Protagonist"
+    ],
+    "optimizationObjectives": [
+      "Crossings - block crossings",
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Interaction grouping",
+      "Protagonist",
+      "Uncrossed protagonist"
+    ],
+    "layoutDescription": "Storylines with a character being in all meetings (protagonist). One-sided and two-sided storylines are considered: All characters are on one side of the protagonist or on both sides (but they must stay on that side). One-sided crossing minimization is shown to be poly, two-sided NP-hard. One- and two-sided block crossing minimization is shown to be NP-hard.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Visualizing Large-Scale Spatial Time Series with GeoChron",
+    "authors": "Zikun Deng; Shifu Chen; Tobias Schreck; Dazhen Deng; Tan Tang; Mingliang Xu",
+    "year": "2024",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://doi.org/10.1109/TVCG.2023.3327162",
+    "source": "Snowballing",
+    "domain": [
+      "Movement data"
+    ],
+    "methodType": [
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - greedy coordination",
+      "Heuristic - greedy ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Look at picture (paper says case study)",
+      "Quantitative metrics (crossings etc)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "The storyflow method is used for crossing and wiggle count minimization. But then, a new heuristic is used for computing coordinates by greedy sweeping from left to right and back. This is part of a large visualization system.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2022.3209480",
+    "title": "Geo-Storylines: Integrating Maps into Storyline Visualizations",
+    "authors": "G. Hulstein, and V. Peña-Araya, and A. Bezerianos",
+    "year": "2023",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9917516",
+    "source": "IEEE",
+    "domain": [
+      "Movement data",
+      "Social - other"
+    ],
+    "methodType": [],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Locations"
+    ],
+    "specialFeatures": [
+      "Design study"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Design study on how to integrate spacial information into storyline visualizations. No layout algorithms.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1007/978-3-031-28694-0_9",
+    "title": "Design of&#xa0;a&#xa0;Process and&#xa0;a&#xa0;Container-Based Cloud Architecture for&#xa0;the&#xa0;Automatic Generation of&#xa0;Storyline Visualizations",
+    "authors": "Emilio Di GiacomoBeniamino Di MartinoWalter DidimoAntonio EspositoGiuseppe LiottaFabrizio Montecchiani",
+    "year": "2023",
+    "venue": "Advanced Information Networking and Applications",
+    "url": "https://link.springer.com/chapter/10.1007/978-3-031-28694-0_9",
+    "source": "SpringerLink",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "This is no implementation but a design suggestion of a system that transforms text of e.g. a movie into a storyline. Classifications of labeling etc. does not make sense, because it has not been implemented.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "NewsLines: Narrative Visualization of News Stories",
+    "authors": "Mariana Costa, Sérgio Nunes",
+    "year": "2023",
+    "venue": "CEUR Workshop Proceedings",
+    "url": "https://ceur-ws.org/Vol-3370/paper4.pdf",
+    "source": "Snowballing",
+    "domain": [
+      "News Articles"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "Expert interview"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Labels - events"
+    ],
+    "specialFeatures": [
+      "Interactions"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "The layout is done by the Narrative chart d3 engine (https://github.com/abcnews/d3-layout-narrative). It is not clear if this really optimizes something. Probably it uses some d3 tools which might optimize crossings.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Crossing Minimization in Time Interval Storylines",
+    "authors": "Alexander Dobler, Martin Nöllenburg, Daniel Stojanovic, Anaïs Villedieu, Jules Wulms",
+    "year": "2023",
+    "venue": "EuroCG 2023",
+    "url": "https://arxiv.org/abs/2302.14213",
+    "source": "Snowballing",
+    "domain": [
+      "Authorship network",
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - ILP",
+      "Heuristic - TSP meeting ordering",
+      "Heuristic - coloring meeting grouping"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Time intervals"
+    ],
+    "optimizationObjectives": [
+      "Compactness - number of layers",
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Flexible ordering of events",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Time intervals group multiple meetings from a year to-\ngether, they can be ordered arbitrarily to minimize crossings.\nExact ILP approaches and a pipeline: Coloring+TSP+ILP\nfrom Gronemann.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "https://doi.org/10.1016/j.vrih.2022.08.008",
+    "title": "NPIPVis: A visualization system involving NBA visual analysis and integrated learning model prediction",
+    "authors": "Zhuo Shi, Mingrui Li, Meng Wang, Jing Shen, Wei Chen, Xiaonan Luo",
+    "year": "2022",
+    "venue": "Virtual Reality & Intelligent Hardware",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2096579622000833",
+    "source": "Science Direct",
+    "domain": [
+      "Movement data - sport"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "User annotations"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "User-guided drawing tool"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Interaction grouping",
+      "User constraints"
+    ],
+    "layoutDescription": "Sports data visualization based on storylines. The tool uses the istoryline library directly. The evaluation in the paper does not evaluate the visualization, but some sports prediction model.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2020.3030467",
+    "title": "PlotThread: Creating Expressive Storyline Visualizations using Reinforcement Learning",
+    "authors": "T. Tang, and R. Li, and X. Wu, and S. Liu, and J. Knittel, and S. Koch, and T. Ertl, and L. Yu, and P. Ren, and Y. Wu",
+    "year": "2021",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9222335",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - AI",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Expert interview",
+      "Quantitative - only runtime"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "User annotations"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "User-guided drawing tool"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Interaction grouping",
+      "User constraints"
+    ],
+    "layoutDescription": "This is an extension to istoryline, where reinforcement learn-\ning is used to compute storylines which adhere to constraints\nthat are obtained from interactions.\nThe initial layout is computed the same as istoryline. Then the user modifies the layout, and the AI agent can propose different variants of new layouts, and the user can choose one of them.\nAlso, a new set of interactions ins introduced.\n\nThe AI agent tries to predict what a user would do to change the layout from the initial layout and the user-adapted layout.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1177/14738716211045007",
+    "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+    "authors": "Vanessa Peña-Araya, Tong Xue, Emmanuel Pietriga, Laurent Amsaleg, Anastasia Bezerianos",
+    "year": "2021",
+    "venue": "Information Visualization",
+    "url": "https://doi.org/https://doi.org/10.1177/14738716211045007",
+    "source": "Sage",
+    "domain": [
+      "News Articles"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "Comparison with other visualizations",
+      "Interactions"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "The visualization has different views on data. They have data that also contains locations, and the visualization can for example use the x-axis for locations and interactions for people being at the location at a specific time.\n\nThe only mention of layout computation is that they use d3.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1007/s00371-019-01789-1",
+    "title": "Evaluation on visualization methods of dynamic collaborative relationships for project management",
+    "authors": "Qiang LuJing HuangQingyu ZhangXiaohui YuanJie Li",
+    "year": "2021",
+    "venue": "The Visual Computer",
+    "url": "https://link.springer.com/article/10.1007/s00371-019-01789-1",
+    "source": "SpringerLink",
+    "domain": [
+      "Project - by person"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - events"
+    ],
+    "specialFeatures": [
+      "Comparison with other visualizations"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "Study on comparing different project visualizations. The storyflow algorithm is used.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "HyperStorylines: Interactively untangling dynamic hypergraphs",
+    "authors": "Vanessa Peña-Araya, Tong Xue, and Anastasia Bezerianos",
+    "year": "2021",
+    "venue": "Sage Journals",
+    "url": "https://doi.org/10.1177/14738716211045007",
+    "source": "Snowballing",
+    "domain": [],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "See other version of this paper",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/ICoSTA48221.2020.1570614056",
+    "title": "A Survey on Visualization Techniques to Narrate Interpersonal Interactions between Sportsmen",
+    "authors": "Z. Abidin, and D. H. Widyantoro, and S. Akbar",
+    "year": "2020",
+    "venue": "2020 International Conference on Smart Technology and Applications (ICoSTA)",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9079289",
+    "source": "IEEE",
+    "domain": [
+      "Social - other"
+    ],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Survey"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "Survey paper on visualizations of “Interpersonal Interactions between Sportsmen”. Storylines are mentioned.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Storyline Visualizations with Ubiquitous Actors",
+    "authors": "Emilio Di Giacomo , Walter Didimo , Giuseppe Liotta , Fabrizio Montecchiani , and Alessandra Tappini",
+    "year": "2020",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://doi.org/10.1007/978-3-030-68766-3_25",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Authorship network"
+    ],
+    "methodType": [
+      "Exact - SAT",
+      "Heuristic - local search",
+      "Heuristic - other"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Character trees"
+    ],
+    "specialFeatures": [
+      "Character tree"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - block crossings",
+      "Wiggles/Bends"
+    ],
+    "constraints": [
+      "Allowing multiple memberships",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Entities are not a single path but a tree because they can\nparticipate in multiple groups at a single point in time. The\ntrees are computed heuristically. Then the SAT approach of van Dijk et al. for\nminimizing block crossings is applied. Then local search\nis applied to further reduce crossings. Although wiggle and whitespace is also minimized, it is not described how.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2018.2864899",
+    "title": "iStoryline: Effective Convergence to Hand-drawn Storylines",
+    "authors": "T. Tang, and S. Rubab, and J. Lai, and W. Cui, and L. Yu, and Y. Wu",
+    "year": "2019",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8440828",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Expert interview"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "User annotations"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "User-guided drawing tool"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation",
+      "User constraints"
+    ],
+    "layoutDescription": "Interactive tool to assist storyline drawing. So interactions impose constraints on the layout process. In general, the storyflow algorithm is used. \n\nWhen constraints on character order are imposed, a heuristic from [Forster, 2005 is used] which essentially is an adaptation of the barycenter heuristic. \n\nConstraints can also say that character coordinates must behave in a specific way, which is encoded in the alignment (wiggle count, wiggle height, whitespace reduction) step.\n\nFurther interactions also change the alignment step.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "https://doi.org/10.1016/j.cag.2018.11.004",
+    "title": "A system for generating storyline visualizations using hierarchical task network planning",
+    "authors": "Kalpesh Padia, Kaveen Herath Bandara, Christopher G. Healey",
+    "year": "2019",
+    "venue": "Computers & Graphics",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0097849318301821",
+    "source": "Science Direct",
+    "domain": [],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "Same as Yarn: Generating Storyline Visualizations Using HTN Planning",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.20380/GI2018.05",
+    "title": "Yarn: Generating Storyline Visualizations Using HTN Planning",
+    "authors": "Padia, Kalpesh, Bandara, Kaveen Herath, Healey, Christopher G.",
+    "year": "2018",
+    "venue": "Proceedings of the 44th Graphics Interface Conference",
+    "url": "https://doi.org/10.20380/GI2018.05",
+    "source": "ACM",
+    "domain": [
+      "Hierarchical task networks"
+    ],
+    "methodType": [
+      "Heuristic - Sugiyama-like ordering"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "Quantitative - only runtime"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Multiple timeline encoding"
+    ],
+    "specialFeatures": [
+      "Encoding multiple timelines"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Barycenter heuristic for crossing minimization.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2018.2816203",
+    "title": "MeetingVis: Visual Narratives to Assist in Recalling Meeting Context and Content",
+    "authors": "Y. Shi, and C. Bryan, and S. Bhamidipati, and Y. Zhao, and Y. Zhang, and K. -L. Ma",
+    "year": "2018",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8320320",
+    "source": "IEEE",
+    "domain": [
+      "Social - meetings"
+    ],
+    "methodType": [],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - annotations",
+      "Labels - characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "No layout algorithm mentioned",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1007/s11192-018-2803-x",
+    "title": "LitStoryTeller+: an interactive system for multi-level scientific paper visual storytelling with a supportive text mining toolbox",
+    "authors": "Qing PingChaomei Chen",
+    "year": "2018",
+    "venue": "Scientometrics",
+    "url": "https://link.springer.com/article/10.1007/s11192-018-2803-x",
+    "source": "SpringerLink",
+    "domain": [
+      "Literature - keyword/topic interaction"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "Task scenario inspection"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Character groups",
+      "Labels - characters",
+      "Multivariate data encoding"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Two different storyline visualizations. The first shows how topics evolve and interact over multiple research papers: The layout depends on topic frequencies in papers. The second visualizations shows interactions of keywords throughout the paper. No mention of how the layout is computed. The evaluation is weird. They show how how different questions can be answered by the visualization system.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/VAST.2017.8585487",
+    "title": "The “y” of it Matters, Even for Storyline Visualization",
+    "authors": "D. Arendt, and M. Pirrung",
+    "year": "2017",
+    "venue": "2017 IEEE Conference on Visual Analytics Science and Technology (VAST)",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8585487",
+    "source": "IEEE",
+    "domain": [
+      "Movement data"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - local search",
+      "Heuristic - maximum independent set wiggle count",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Expert interview",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "The paper compares non-standard storyline (which does not fall within our definition) with standard storylines. The standard storyline algorithm: Crossings are mini-\nmized by sweep + Median heuristic. Then a local search\nswaps neighboring nodes. Wiggle count is minimized by\nmodelling as independent set (cannot use lcs because mul-\ntiple in/out-edges) and heuristic for independent set is used.\nWhitespace is reduced with linear programming.\nFor the case where entities are grouped into locations per\ntimesteps and locations have a fixed order: Single node per lo-\ncation with edge-weighted directed graph. Greedy algorithm\nis used.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1007/s00371-017-1409-2",
+    "title": "Storytelling by the StoryCake visualization",
+    "authors": "Lu QiangChai BingjieZhang Haibo",
+    "year": "2017",
+    "venue": "The Visual Computer",
+    "url": "https://link.springer.com/article/10.1007/s00371-017-1409-2",
+    "source": "SpringerLink",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Circular",
+      "Locations"
+    ],
+    "specialFeatures": [
+      "Circular",
+      "Locations"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Same as the other storycake paper",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Computing Storyline Visualizations with Few Block Crossings",
+    "authors": "Thomas C. van Dijk, Fabian Lipp(B) , Peter Markfelder,\nand Alexander Wolff",
+    "year": "2017",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://doi.org/10.1007/978-3-319-73915-1",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - SAT"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - block crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Exact MaxSAT formulation for block crossingsy",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Minimizing Wiggles in Storyline Visualizations",
+    "authors": "Theresa Froschl and Martin Nollenburg",
+    "year": "2017",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "https://doi.org/10.1007/978-3-319-73915-1",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - ILP",
+      "Exact - SAT"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Discrete coordinates",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Character curve coordinates must adhere to matrix en-\ntries. Exact minimization of crossings, wiggle count, wiggle\nheight. Multi-objective formulation with ILP and SAT",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Block Crossings in Storyline Visualizations",
+    "authors": "Thomas C. van Dijk, Martin Fink, Norbert Fischer, Fabian Lipp, Peter Markfelder, Alexander Ravsky, Subhash Suri, and Alexander Wolff",
+    "year": "2017",
+    "venue": "Journal of Graph Algorithms and Applications",
+    "url": "https://jgaa.info/index.php/jgaa/article/view/paper443",
+    "source": "Journal of Graph Algorithms and Applications",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Approximation",
+      "Exact - FPT",
+      "Heuristic - greedy ordering",
+      "Theory"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)",
+      "Theory paper"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - block crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Minimization of block crossings, which are cross-\nings between two bundles of edges. They show poly for 0\nblock crossings, FPT in number of characters. Greedy al-\ngorithm for meetings of size 2 which yields optimal solution\nfor 3 entities. Constant factor approximation for constant-size\nmeetings, where meetings cannot be repeated. Further, they also show NP-hardness of block crossing minimization. They also improve the FPT-algorithm for pair crossings parameterized by the number of characters.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "An application of optimization method for storyline based on cluster analysis",
+    "authors": "Yuhua Liu, Hanfei Lin, Yitao Liang, Changbo Wang",
+    "year": "2017",
+    "venue": "VINCI '17: Proceedings of the 10th International Symposium on Visual Information Communication and Interaction",
+    "url": "https://doi.org/10.1145/3105971.3105986",
+    "source": "Snowballing",
+    "domain": [
+      "Movement data - sport"
+    ],
+    "methodType": [
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - MDS",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Clustering",
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "Clustering",
+      "Interactions"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "First characters are partitioned into cluster based on 1D multidimensional scaling. The characters then by default (if they are in no interaction), are within their cluster. Interactions are then assigned to the clusters based on how many characters of the interaction are in the cluster. Then the storyflow algorithm is used: barycenter-like crossing minimization. Longest common subsequence wiggle count minimization.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Story of a 'Storyline Visualization' in High School Readings",
+    "authors": "K. Osmakčić; K. Kocijan",
+    "year": "2017",
+    "venue": "2017 40th International Convention on Information and Communication Technology, Electronics and Microelectronics (MIPRO)",
+    "url": "https://doi.org/10.23919/MIPRO.2017.7973532",
+    "source": "Snowballing",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - annotations",
+      "Labels - characters",
+      "Locations"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "The paper uses storylines for conveying a story to children in school. A user study is carried out to see if the storyline helps understand the story.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/CW.2016.43",
+    "title": "StoryCake: A Hierarchical Plot Visualization Method for Storytelling in Polar Coordinates",
+    "authors": "L. Qiang, and C. Bingjie",
+    "year": "2016",
+    "venue": "2016 International Conference on Cyberworlds (CW)",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7756154",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Circular",
+      "Locations"
+    ],
+    "specialFeatures": [
+      "Circular",
+      "Locations"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Uses storyflow:Pipeline approach. First crossings are minimzed with\nsweep + barycenter heuristic. Then wiggle count is minimizes\nwith longest common subsequence. How wiggle height and\nwhitespace is minimized is impossible to parse.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Crossing Minimization in Storyline Visualization",
+    "authors": "Martin Gronemann, Michael Junger, Frauke Liers, and Francesco Mambelli",
+    "year": "2016",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "0.1007/978-3-319-50106-2 29",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - ILP"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Exact algorithm for crossings minimization using ILP building on\na reduciton to max-cut.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Visualizing Variation in Classical Text with Force Directed Storylines",
+    "authors": "Shejuti Silvia, Ronak Etemadpour, June Abbas, Sam Huskey and Chris Weaver",
+    "year": "2016",
+    "venue": "Workshop on visualization for the digital humanities 2016",
+    "url": "https://vis4dh.dbvis.de/papers/2016/Visualizing%20Variation%20in%20Classical%20Text%20with%20Force%20Directed%20Storylines.pdf",
+    "source": "Snowballing",
+    "domain": [
+      "Critical editions"
+    ],
+    "methodType": [
+      "Heuristic - force-based approach"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - annotations"
+    ],
+    "specialFeatures": [
+      "Interactions"
+    ],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Layout algorithm based on Fruchtermann-Reingold force-directed. Different forces pull interactions together, force lines to be straight, and separate different interactions. It seems that the exact y-coordinates are computed afterwards, but the description for that is missing.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2015.2392771",
+    "title": "An Efficient Framework for Generating Storyline Visualizations from Streaming Data",
+    "authors": "Y. Tanahashi, and C. -H. Hsueh, and K. -L. Ma",
+    "year": "2015",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7015617",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - greedy",
+      "Heuristic - local search",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Benchmarks",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "For streaming data",
+      "Slots"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation"
+    ],
+    "layoutDescription": "Similar as in [Tanahashi, 2012] Pipeline approach. slots are used to as-\nsign interaction sessions, as in [Tanahashi, 2012]. First, a greedy heuristic is\nused to assign these slots such that there are few wiggles and\ncrossings. Then, crossings are minimized by greedily assign-\ning order from last timestep to the next for shared characters.\nNon-shared are appended at the end. Wiggle count is min-\nimized with longest common subsequence. Wiggle height is\nminimized with quadratic programming, adapting [Storyflow, 2013]. At the\nend a local search is used, to move location sessions between\nslots. The authors claim that the layout process is for streaming data (where new timesteps may be added at the end). I am not sure though if the layout algorithm is majorly different from one that is not dealing with streaming data.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/BigData.2015.7363802",
+    "title": "Visual analysis of bi-directional movement behavior",
+    "authors": "Y. Zheng, and W. Wu, and H. Qu, and C. Ma, and L. M. Ni",
+    "year": "2015",
+    "venue": "2015 IEEE International Conference on Big Data (Big Data)",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7363802",
+    "source": "IEEE",
+    "domain": [
+      "Movement data"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "Expert interview"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Character groups",
+      "Multivariate data encoding"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "No proper definition"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "No layout description, but heuristic is mentioned. Two different storyline views are presented, but both are pretty far from what a real storyline is used for.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "On Minimizing Crossings in Storyline Visualizations",
+    "authors": "Irina Kostitsyna, Martin Nollenburg, Valentin Polishchuk, Andre Schulz, and Darren Strash",
+    "year": "2015",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "0.1007/978-3-319-27261-0 16",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [],
+    "methodType": [
+      "Exact - FPT",
+      "Theory"
+    ],
+    "evaluation": [
+      "Theory paper"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Persistent characters"
+    ],
+    "visualFeatures": [],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Minimizing crossings: It is shown that if meetings only\nconsist of two entities and the meetings form a tree, a solution\nwith O(n log n) crossings can be computed, which is also a tight lower bound. Further, an FPT-\nalgorithm in the number of characters is given.\n\nAlso NP-completeness by a simple reduction from bipartite crossing number is hinted.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "SVEN: An Alternative Storyline Framework for Dynamic Graph Visualization",
+    "authors": "Dustin L. Arendt",
+    "year": "2015",
+    "venue": "Graph Drawing and Network Visualization",
+    "url": "10.1007/978-3-319-27261-0 48",
+    "source": "Graph Drawing and Network Visualization",
+    "domain": [],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - maximum independent set wiggle count",
+      "Pipeline"
+    ],
+    "evaluation": [],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Pipeline approach. Crossings are minimimized by modelling the storyline as a directed acyclic graph where each event corresponds to a node. Then graphvis is used to minimize crossings (probably sugiyama-style). Wiggle count is minimized heuristically by modelling the problem as maximum independent set. Linear programming is used for minimizing whitespace.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Storyline Visualization with Force Directed Layout",
+    "authors": "Shejuti Silvia, June Abbas, Sam Huskey, Chris Weaver",
+    "year": "2015",
+    "venue": "The Digital Latin Library Project, The University of Oklahoma",
+    "url": "https://www.cs.ou.edu/~weaver/academic/publications/silvia-2015a/materials/silvia-2015a.pdf",
+    "source": "Snowballing",
+    "domain": [
+      "Critical editions"
+    ],
+    "methodType": [
+      "Heuristic - force-based approach"
+    ],
+    "evaluation": [],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Labels - events"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends"
+    ],
+    "constraints": [],
+    "layoutDescription": "Using force-directed algorithm only for y-coordinate.\nNodes in an interaction attract each other. Nodes connected\nby an edge attract each other (same entity over consecitive\ntimesteps). Nodes in an interaction repulse each other.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Exploring Dinofun park happenings",
+    "authors": "Pascal Held; Christian Braune; Rudolf Kruse",
+    "year": "2015",
+    "venue": "2015 IEEE Conference on Visual Analytics Science and Technology (VAST)",
+    "url": "https://doi.org/10.1109/VAST.2015.7347658",
+    "source": "Snowballing",
+    "domain": [
+      "Movement data"
+    ],
+    "methodType": [
+      "Exact - Linear Programming"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Distance approximation",
+      "Wiggles/Bends - quadratic wiggle height"
+    ],
+    "constraints": [],
+    "layoutDescription": "Real-world time series with distance values. The\nquadratic difference to the real world distance plus squared\nwiggle height is minimized. A proper objective function is\ngiven, but the method to minimize it is not described.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "An effective demonstration for group collaboration based on storyline visualization technology",
+    "authors": "Qiang Lu; Xiang-yuan Zhu; Li Liu; Shu-bo Cao",
+    "year": "2014",
+    "venue": "Proceedings of the 2014 IEEE 18th International Conference on Computer Supported Cooperative Work in Design (CSCWD)",
+    "url": "https://doi.org/10.1109/CSCWD.2014.6846815",
+    "source": "Snowballing",
+    "domain": [
+      "Project - by person"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Sugiyama-like ordering",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "Locations"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle height"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Crossings are minimized by a sugiyama style sweep.\nA greedy algorithm is used for one step, but the given refer-\nence for that algorithm is not in the paper. It is not properly\ndescribed how wiggle and whitespace is minimize, at least not understandable to me. \n\nWiggle height and whitespace is minimized with linear programming as far as I understand, even though the paper says wiggle count is minimized.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "StoryGraphs: Visualizing Character Interactions as a Timeline",
+    "authors": "Makarand Tapaswi, Martin Bauml, Rainer Stiefelhagen",
+    "year": "2014",
+    "venue": "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2014",
+    "url": "https://www.cv-foundation.org/openaccess/content_cvpr_2014/html/Tapaswi_StoryGraphs_Visualizing_Character_2014_CVPR_paper.html",
+    "source": "Snowballing",
+    "domain": [
+      "Video scene detection"
+    ],
+    "methodType": [
+      "Heuristic - gradient descent",
+      "Heuristic - objective abstraction"
+    ],
+    "evaluation": [],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Other - encoding non-interacting characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height"
+    ],
+    "constraints": [],
+    "layoutDescription": "A ccombined objective function of proximity, squared wiggle height, and\ncrossings is given. It computes coordinates. The crossing ob-\njective is abstracted into a heuristic one (pseudo-Huber loss)\nthat is differentiable. Then matlab fmincon is used to compute\na solution with small combined objective function.\n\nProximity models that characters an interactions are together. Separation models a minimum separation between characters.\n\nAlough there is a quantitative study, this is on the scene detection from video and not on the storyline.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "",
+    "title": "Visual exploratory tool for storyline generation",
+    "authors": "Erk Ediz Akyiğit; Tuğkan Cengiz; Onur Burak Yildirim; Selim Balcisoy",
+    "year": "2014",
+    "venue": "2014 IEEE Conference on Visual Analytics Science and Technology (VAST)",
+    "url": "https://doi.org/10.1109/VAST.2014.7042497",
+    "source": "Snowballing",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [],
+    "evaluation": [],
+    "temporalModel": [],
+    "visualFeatures": [],
+    "specialFeatures": [
+      "Data generation tool"
+    ],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/CW.2013.36",
+    "title": "A Study on Enhancing Timeline-Like Visualization with Verbal Text",
+    "authors": "J. -K. Chou, and I. Liao, and K. -L. Ma, and C. -K. Yang",
+    "year": "2013",
+    "venue": "2013 International Conference on Cyberworlds",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6680116",
+    "source": "IEEE",
+    "domain": [
+      "Social - other"
+    ],
+    "methodType": [],
+    "evaluation": [
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete"
+    ],
+    "visualFeatures": [
+      "Audio Annotations"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [],
+    "constraints": [],
+    "layoutDescription": "",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2013.196",
+    "title": "StoryFlow: Tracking the Evolution of Stories",
+    "authors": "S. Liu, and Y. Wu, and E. Wei, and M. Liu, and Y. Liu",
+    "year": "2013",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6634164",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Exact - Linear Programming",
+      "Heuristic - Longest Common Subsequence wiggle count minimization",
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - greedy",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Expert interview",
+      "Look at picture (paper says case study)",
+      "Quantitative metrics (crossings etc)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Locations"
+    ],
+    "specialFeatures": [
+      "Interactions",
+      "Locations"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - quadratic wiggle height",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping",
+      "Minimum character separation",
+      "Single cluster/location ordering"
+    ],
+    "layoutDescription": "Pipeline approach. First reducing crossings, then wiggle number, then wiggle distance, and whitespace. After locations are sorted greedily, crossings are optimized as in standard storylines but with the location restrictions. This is done in Sugiyama style, barycenter heuristic considering the hierarchy.\nTo minimize the wiggle count in the next step, the problem is heuristically reduced to the longest common subsequence problem.\nNext, given the ordering constraints and constraints on some lines being straight, a quadratic program minimizes squared wiggle height and white space given two weights.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1109/TVCG.2012.212",
+    "title": "Design Considerations for Optimizing Storyline Visualizations",
+    "authors": "Y. Tanahashi, and K. -L. Ma",
+    "year": "2012",
+    "venue": "IEEE Transactions on Visualization and Computer Graphics",
+    "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6327274",
+    "source": "IEEE",
+    "domain": [
+      "Movies/Books"
+    ],
+    "methodType": [
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - genetic algorithm",
+      "Heuristic - greedy white space reduction",
+      "Pipeline"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Labels - events",
+      "Locations"
+    ],
+    "specialFeatures": [
+      "Slots"
+    ],
+    "optimizationObjectives": [
+      "Compactness - limit whitespace",
+      "Crossings - pair crossings",
+      "Wiggles/Bends - wiggle count"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Minimization of wiggle, crossings, and whitespace by genetic algorithm with postprocessing. Interactions can be multiple timesteps long. A genome assigns each interaction an integer $y$-slot. To evaluate a genome, a pipeline approach of rearranging lines inside slots and removing whitespace is applied and then a fitness function is employed that measures wiggle and crossings. To rearrange lines inside a slot, lines are categorized and greedily made as straight as possible. Minimizing whitespace greedily shifts slot segments (Connected clusters inside a slot) down. An adaptation incorporating locations is presented, where a fixed order of locations is also encoded with a genome.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "10.1145/1842993.1843035",
+    "title": "Tracing genealogical data with TimeNets",
+    "authors": "Kim, Nam Wook, Card, Stuart K., Heer, Jeffrey",
+    "year": "2010",
+    "venue": "Proceedings of the International Conference on Advanced Visual Interfaces",
+    "url": "https://doi.org/10.1145/1842993.1843035",
+    "source": "ACM",
+    "domain": [
+      "Genealogy"
+    ],
+    "methodType": [
+      "Other"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)",
+      "User study"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Genealogy - birth",
+      "Labels - characters",
+      "Uncertainty"
+    ],
+    "specialFeatures": [
+      "Interactions"
+    ],
+    "optimizationObjectives": [
+      "No proper definition"
+    ],
+    "constraints": [
+      "Equidistant interaction characters",
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Layout algorithm highly depends on problem domain but is not easily understandable. Mostly given by data itself.",
+    "layoutFullyDescribed": "Yes"
+  },
+  {
+    "doi": "1https://doi.org/10.1145/1879211.1879219",
+    "title": "Software evolution storylines",
+    "authors": "Michael Ogawa and Kwan-Liu Ma",
+    "year": "2010",
+    "venue": "https://dl.acm.org/doi/proceedings/10.1145/1879211ion",
+    "url": "https://doi.org/10.1145/1879211.1879219",
+    "source": "Snowballing",
+    "domain": [
+      "Software - by developer"
+    ],
+    "methodType": [
+      "Heuristic - Sugiyama-like ordering",
+      "Heuristic - greedy coordination"
+    ],
+    "evaluation": [
+      "Look at picture (paper says case study)"
+    ],
+    "temporalModel": [
+      "Discrete",
+      "Interaction duration",
+      "Non-persistent characters"
+    ],
+    "visualFeatures": [
+      "Labels - characters",
+      "Other - encoding non-interacting characters"
+    ],
+    "specialFeatures": [],
+    "optimizationObjectives": [
+      "Crossings - pair crossings",
+      "Wiggles/Bends"
+    ],
+    "constraints": [
+      "Interaction grouping"
+    ],
+    "layoutDescription": "Minimization of wiggle and crossings by using a greedy algorithm that already computes y-coordinates directly. Random order for first timestep. For each interaction, the average y-coordinate in the previous layer is computed. Then the clusters are greedily placed at the desired y-coordinate. The description is not super clear and formal",
+    "layoutFullyDescribed": "Yes"
+  }
+]
