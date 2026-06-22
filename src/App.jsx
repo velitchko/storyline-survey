@@ -291,7 +291,7 @@ function YearFilter({ years, active, onChange }) {
 export default function App() {
   const [papers, setPapers] = useState([])
   const [loading, setLoading] = useState(true)
-  const [showLoader, setShowLoader] = useState(true)
+  // const [showLoader, setShowLoader] = useState(true)
 
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem('theme')
@@ -385,9 +385,9 @@ export default function App() {
 
   return (
     <>
-      {showLoader && (
+      {/* {showLoader && (
         <StorylineLoader onDone={() => setShowLoader(false)}/>
-      )}
+      )} */}
 
       {/* ── Navbar ─────────────────────────────────────────────── */}
       <nav className="navbar">
