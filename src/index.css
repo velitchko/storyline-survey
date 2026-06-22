@@ -247,6 +247,50 @@ button { font-family: var(--font); }
   text-transform: uppercase; letter-spacing: .08em;
 }
 
+/* ─── Related Survey Browsers ────────────────────────────────────────────── */
+.related-surveys {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 0;
+}
+.related-surveys-header {
+  margin-bottom: 10px;
+}
+.related-surveys-label {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--text-muted);
+}
+.related-surveys-scroll {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.related-survey-card {
+  display: inline-flex; flex-direction: column; gap: 2px;
+  padding: 8px 12px; border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  text-decoration: none; color: var(--text);
+  transition: border-color .15s, background .15s, box-shadow .15s;
+  position: relative; min-width: 0;
+}
+.related-survey-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-bg);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+.related-survey-topic {
+  font-size: .8rem; font-weight: 600; color: var(--text); line-height: 1.3;
+}
+.related-survey-card:hover .related-survey-topic { color: var(--accent); }
+.related-survey-authors {
+  font-size: .7rem; color: var(--text-muted); line-height: 1.3;
+}
+.related-survey-link-icon {
+  position: absolute; top: 7px; right: 8px;
+  color: var(--text-muted); opacity: 0; transition: opacity .15s;
+}
+.related-survey-card:hover .related-survey-link-icon { opacity: 1; color: var(--accent); }
+
 /* ─── App body ───────────────────────────────────────────────────────────── */
 .app-body { display: flex; min-height: calc(100vh - 320px); }
 
@@ -348,6 +392,16 @@ button { font-family: var(--font); }
 /* active filter strip */
 .active-filters {
   display: flex; align-items: center; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+}
+
+/* ─── Tag legend ─────────────────────────────────────────────────────────── */
+.tag-legend {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px;
+  margin-bottom: 14px;
+}
+.tag-legend-label {
+  font-size: .68rem; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--text-muted); margin-right: 2px;
 }
 .active-filter-label { font-size: .75rem; color: var(--text-muted); font-weight: 600; }
 .active-filter-tag {

@@ -26,6 +26,31 @@ const Icon = ({ name, size = 16 }) => {
   return icons[name] || null
 }
 
+// ─── Related survey browsers (sorted by year ascending) ───────────────────
+const RELATED_SURVEYS = [
+  { year: 2011, topic: 'Tree Visualization',                   url: 'https://www.treevis.net/',                                        authors: 'H.-J. Schulz' },
+  { year: 2013, topic: 'Multi-Variate Visualization',          url: 'https://multivis.net/',                                           authors: 'J. Kehrer, H. Hauser' },
+  { year: 2014, topic: 'Financial Visualization',              url: 'http://financevis.net/',                                          authors: 'M. Dumas, M. J. McGuffin, V. L. Lemieux' },
+  { year: 2015, topic: 'Biological Data Visualization',        url: 'https://biovis.lnu.se/',                                          authors: 'A. Kerren, K. Kucher, Y.-F. Li, F. Schreiber' },
+  { year: 2015, topic: 'Data Physicalization',                 url: 'https://dataphys.org/list/',                                      authors: 'P. Dragicevic, Y. Jansen' },
+  { year: 2015, topic: 'Text Visualization',                   url: 'https://textvis.lnu.se/',                                         authors: 'K. Kucher, A. Kerren' },
+  { year: 2016, topic: 'Matrix Reordering',                    url: 'https://matrixreordering.dbvis.de/',                              authors: 'M. Behrisch, B. Bach, N. H. Riche, T. Schreck, J.-D. Fekete' },
+  { year: 2016, topic: 'Set Visualization',                    url: 'https://www.cvast.tuwien.ac.at/SetViz',                           authors: 'B. Alsallakh, L. Micallef, W. Aigner, H. Hauser, S. Miksch, P. Rodgers' },
+  { year: 2016, topic: 'Time Visualization',                   url: 'https://browser.timeviz.net/',                                    authors: 'C. Tominski, W. Aigner' },
+  { year: 2017, topic: 'Dynamic Graphs',                       url: 'https://dynamicgraphs.fbeck.com/',                                authors: 'F. Beck, M. Burch, S. Diehl, D. Weiskopf' },
+  { year: 2017, topic: 'High-Dimensional Data Visualization',  url: 'https://www.sci.utah.edu/~shusenl/highDimSurvey/website/',        authors: 'S. Liu, D. Maljovec, B. Wang, P.-T. Bremer, V. Pascucci' },
+  { year: 2017, topic: 'Space-Time Cube Visualizations',       url: 'https://aviz.fr/~bbach/spacetimecubes/',                          authors: 'B. Bach, P. Dragicevic, D. Archambault, C. Hurter, S. Carpendale' },
+  { year: 2018, topic: 'Sentiment Visualization',              url: 'https://sentimentvis.lnu.se/',                                    authors: 'K. Kucher, C. Paradis, A. Kerren' },
+  { year: 2019, topic: 'Multivariate Network Visualization',   url: 'https://vdl.sci.utah.edu/mvnv/wizard/',                           authors: 'C. Nobre, M. Meyer, M. Streit, A. Lex' },
+  { year: 2020, topic: 'Trust in ML Visualization',            url: 'https://trustmlvis.lnu.se/',                                      authors: 'A. Chatzimparmpas, R. M. Martins, I. Jusufi, K. Kucher, F. Rossi, A. Kerren' },
+  { year: 2021, topic: 'Geospatial Network Visualization',     url: 'https://geonetworks.github.io/',                                  authors: 'S. Schöttler, Y. Yang, H. Pfister, B. Bach' },
+  { year: 2021, topic: 'Human-Centered ML Evaluation',         url: 'https://hce-star.dbvis.de/',                                      authors: 'F. Sperrle, G. Guo, M. El-Assady, R. Borgo, D. H. Chau, A. Endert, D. Keim' },
+  { year: 2021, topic: 'Uncertainty Visualization',            url: 'https://amitjenaiitbm.github.io/uncertaintyVizBrowser/',          authors: 'A. Jena, U. Engelke, T. Dwyer, V. Rajamanickam, C. Paris' },
+  { year: 2022, topic: 'Immersive Analytics',                  url: 'https://iasurvey.dbvis.de/',                                      authors: 'M. Kraus, J. Fuchs, B. Sommer, K. Klein, U. Engelke, D. A. Keim, F. Schreiber' },
+  { year: 2023, topic: 'Network Visualization',                url: 'https://vfilipov.pages.cvast.tuwien.ac.at/survis/',               authors: 'V. Filipov, A. Arleo, S. Miksch' },
+  { year: 2024, topic: 'Graph Layout Algorithm Evaluation',    url: 'https://visdunneright.github.io/gd-comp-eval/',                   authors: 'S. Di Bartolomeo, T. Crnovrsanin, D. Saffo, C. Dunne' },
+]
+
 // ─── Survey metadata (edit here) ────────────────────────────────────────────
 const SURVEY = {
   titlePlain: 'The Story(line) So Far: A Survey on Storyline Visualization',
@@ -421,6 +446,9 @@ export default function App() {
               <a href={`mailto:${SURVEY.contactEmail}`} className="btn btn-outline">
                 <Icon name="mail" size={14}/> Contact
               </a>
+              <a href="#related-surveys" className="btn btn-outline">
+                <Icon name="externalLink" size={14}/> Other Surveys
+              </a>
             </div>
           </div>
         </div>
@@ -531,6 +559,14 @@ export default function App() {
             </div>
           </div>
 
+          {/* Tag colour legend */}
+          <div className="tag-legend">
+            <span className="tag-legend-label">Legend</span>
+            {FILTER_DEFS.map(d => (
+              <span key={d.key} className={`tag ${d.tagClass}`}>{d.label}</span>
+            ))}
+          </div>
+
           {activeFilterList.length > 0 && (
             <div className="active-filters">
               <span className="active-filter-label">Active:</span>
@@ -572,6 +608,30 @@ export default function App() {
           )}
         </main>
       </div>
+
+      {/* ── Related Surveys ────────────────────────────────────── */}
+      <section className="related-surveys" id="related-surveys">
+        <div className="container">
+          <div className="related-surveys-header">
+            <span className="related-surveys-label">Related Survey Browsers</span>
+          </div>
+          <div className="related-surveys-scroll">
+            {RELATED_SURVEYS.map(s => (
+              <a
+                key={s.url}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="related-survey-card"
+              >
+                <span className="related-survey-topic">{s.topic}</span>
+                <span className="related-survey-authors">{s.year} · {s.authors}</span>
+                <span className="related-survey-link-icon"><Icon name="externalLink" size={11}/></span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* ── Footer ─────────────────────────────────────────────── */}
       <footer className="footer">
